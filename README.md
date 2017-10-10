@@ -45,6 +45,7 @@ $ python manage.py shell < get_articles.py
 
 ## Viewing Posted in the Browser
 To view Posted as a user, go to [127.0.0.1:8000](http://127.0.0.1:8000/)
+
 To view the Posted admin page, go to [127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
 
 ## Exiting
