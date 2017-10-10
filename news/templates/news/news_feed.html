@@ -1,0 +1,22 @@
+{% extends "news_base.html" %}
+
+{% load static %}
+
+{% block title %}{{ publisher.name }} - {{ feed.name }}{% endblock %}
+
+{% block description %}Latest articles from {{ publisher.name }} - {{ feed.name }}.{% endblock %}
+
+{% block content %}
+  <header>
+    <img class="publisher-icon center-block" src="{% with 'news/images/'|add:publisher.image_url as image_static %}{% static image_static %}{% endwith %}">
+    <h1>{{ publisher.name }}</h1>
+    <h2>{{ feed.name }}</h2>
+  </header>
+
+  {% include page_template %}
+  {% block js %}
+      {{ block.super }}
+      <script src="{% static 'js/el-pagination.js' %}"></script>
+      <script>$.endlessPaginate({paginateOnScroll: true, paginateOnScrollMargin: 2000});</script>
+  {% endblock %}
+{% endblock %}

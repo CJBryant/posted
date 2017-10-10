@@ -1,0 +1,157 @@
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+   color: inherit;
+   text-decoration: inherit;
+   font-weight: inherit;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+header h1,
+header h2 {
+  text-align: center;
+}
+
+header .publisher-icon {
+  width: 144px;
+  border-radius: 72px;
+}
+
+.panel-group {
+  border-radius: 4px;
+}
+
+.panel {
+  padding: 0px;
+  border-width: 0px;
+  border-radius: 4px !important;
+  box-shadow: 0px 2px 2px 1px #bbb;
+}
+
+.article-image {
+  width: 100%;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.article-info {
+  margin: 10px 10px 0px 10px;
+}
+
+.article-about {
+  margin-bottom: 10px;
+}
+
+.by-line {
+  color: #999;
+  padding: 10px 0px 10px 0px;
+  border-top: 1px solid #ddd;
+  font-size: 12px;
+}
+
+.by-line img {
+  width: 18px;
+  border-radius: 9px;
+}
+
+.publisher,
+.feed {
+  margin-bottom: 20px;
+}
+
+.publisher.panel,
+.feed.panel {
+  padding: 10px;
+}
+
+.publisher li {
+  font-size: 22px;
+}
+
+.feed li {
+  font-size: 16px;
+}
+
+.publisher img {
+  width: 60px;
+  border-radius: 30px;
+}
+
+.feed img {
+  width: 40px;
+  border-radius: 20px;
+}
+
+.spacer {
+  margin-bottom: 500px;
+}
+
+.endless_container {
+  text-align: center;
+  font-weight: bold;
+  clear: both;
+}
+
+.follow-btn,
+.follow-btn:focus {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-top: -3px;
+  background-color: white;
+  color: #888;
+  border-color: #888;
+}
+
+.follow-btn.followlist {
+  margin-top: 6px;
+}
+
+.follow-btn:focus,
+.follow-btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.follow-btn:hover {
+  color: #008EFE;
+  border-color: #008EFE;
+}
+
+.unfollow-btn:hover {
+  color: #FF0000;
+  border-color: #FF0000;
+}
+
+.add-btn,
+.add-btn:focus {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: -4px;
+  background-color: white;
+  color: #888;
+  border-color: #888;
+}
+
+.add-btn:focus,
+.add-btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.add-btn:hover {
+  color: #008EFE;
+  border-color: #008EFE;
+}
+
+.remove-btn:hover {
+  color: #FF0000;
+  border-color: #FF0000;
+}

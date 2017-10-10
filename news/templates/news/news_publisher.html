@@ -1,0 +1,26 @@
+{% extends "news_base.html" %}
+
+{% load static %}
+
+{% block title %}{{ publisher.name }}{% endblock %}
+
+{% block description %}All feeds from {{ publisher.name }}.{% endblock %}
+
+{% block content %}
+<header>
+  <img class="publisher-icon center-block" src="{% with 'news/images/'|add:publisher.image_url as image_static %}{% static image_static %}{% endwith %}">
+  <h1>{{ publisher.name }}</h1>
+</header>
+
+<ul>
+{% for feed in publisher_feed_list %}
+  <li>
+    <div class="feed-card">
+      <ul>
+        <li><a href="{% url 'news:feed' publisher.code feed.id %}">{{ feed.name }}</a></li>
+      </ul>
+    </div>
+  </li>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "news_base.html" %}
+
+{% load static %}
+
+{% load posted_tags %}
+
+{% block title %}My Feeds{% endblock %}
+
+{% block description %}List of followed feeds.{% endblock %}
+
+{% block content %}
+<header>
+  <h1>My Feeds</h1>
+</header>
+
+<div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+  <ul class="list-unstyled">
+  {% for feed in feeds_list %}
+      <div class="panel feed">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <img class='publisher-icon' src="{% with 'news/images/'|add:feed.publisher.image_url as image_static %}{% static image_static %}{% endwith %}">
+              </li>
+              <li class="list-inline-item">
+                <a href="{% url 'news:feed' feed.publisher.code feed.id %}">
+                  {{ feed.name }}
+                </a>
+              </li>
+              <li class="list-inline-item pull-right">
+                <button type="button" id="feed-{{feed.id}}" class="btn follow-btn unfollow-btn followlist">Following</button>
+              </li>
+            </ul>
+      </div>
+  {% endfor %}
+  </ul>
+</div>
+{% endblock %}

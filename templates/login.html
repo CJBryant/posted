@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% load static %}
+
+{% block title %}Login{% endblock %}
+
+{% block description %}Login page for Posted.{% endblock %}
+
+{% block css %}<link rel="stylesheet" type="text/css" href="{% static 'css/registration.css' %}"/>{% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+      {% if form.errors %}
+        <div class='panel panel-danger login-error'>
+          <div class='panel-heading'>
+            <h3 class='panel-title'>Your username and password didn't match. Please try again.</h3>
+          </div>
+        </div>
+      {% endif %}
+
+      {% if next %}
+        {% if user.is_authenticated %}
+          <div class='panel panel-danger login-error'>
+            <div class='panel-heading'>
+              <h3 class='panel-title'>Your account doesn't have access to this page. To proceed, please login with an account that has access.</h3>
+            </div>
+          </div>
+        {% else %}
+          <div class='panel panel-danger login-error'>
+            <div class='panel-heading'>
+              <h3 class='panel-title'>Please login to see this page.</h3>
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+    </div>
+
+    <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+      <div class="login-panel panel panel-default">
+        <div class="panel-body">
+          {% crispy form %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,75 @@
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin: 0px;
+}
+
+.form-accounts {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-accounts .form-accounts-heading,
+.form-accounts .checkbox {
+  margin-bottom: 10px;
+}
+.form-accounts .checkbox {
+  font-weight: normal;
+}
+.form-accounts .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-accounts .form-control:focus {
+  z-index: 2;
+}
+.form-accounts input[name="username"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-accounts input[name="email"],
+.form-accounts input[name="password1"] {
+    margin-bottom: -1px;
+    border-radius: 0;
+}
+
+.form-accounts input[name="password"],
+.form-accounts input[name="password2"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#id_remember_me {
+  margin-left: 0px;
+}
+
+#hint_id_remember_me {
+  margin-left: 20px;
+}
+
+.register-btn {
+  margin-top: 10px;
+}
+
+#registered-go-home {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-error{
+  /*margin: 0px 70px 20px 70px;*/
+  text-align: center;
+}
+
+.login {
+  margin-top: 20px;
+}

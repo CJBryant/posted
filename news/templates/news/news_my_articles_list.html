@@ -1,0 +1,40 @@
+{% load static %}
+
+{% load posted_tags %}
+
+{% load el_pagination_tags %}
+<ul class="articles list-unstyled">
+  {% lazy_paginate 10 article_list %}
+  {% for article in article_list %}
+    <li>
+      <div class="panel col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+        <ul class="list-unstyled">
+          <li><a href="{{ article.url }}" target="_blank"><img class="article-image" src={{ article.image_url }}></a></li>
+          <li>
+            <div class="article-info">
+              <div class="article-about">
+                <ul class="list-unstyled">
+                  <li><a href="{{ article.url }}" target="_blank"><h4>{{ article.title }}</h4></a></li>
+                  <li>{{ article.description }}</li>
+                </ul>
+              </div>
+              <div class="by-line">
+                <ul class="list-inline">
+                  <li class="list-inline-item"><img src="{% with 'news/images/'|add:article.publisher.image_url as image_static %}{% static image_static %}{% endwith %}"> {{ article.publisher }}</li>
+                  <li class="list-inline-item">-</li>
+                  <li class="list-inline-item">{{ article.pub_date }}</li>
+                  <li class="pull-right">
+                    <button type="button" id="article-{{article.id}}" class="btn add-btn remove-btn mylist">
+                      <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </ul>
+        <div class="article-options"></div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
+{% show_more " " "Loading..." %}

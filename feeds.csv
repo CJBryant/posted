@@ -1,0 +1,57 @@
+World,http://rss.nytimes.com/services/xml/rss/nyt/World.xml,nytimes,0,World
+US,http://rss.nytimes.com/services/xml/rss/nyt/US.xml,nytimes,0,US
+Business,http://rss.nytimes.com/services/xml/rss/nyt/Business.xml,nytimes,0,Economics
+Technology,http://rss.nytimes.com/services/xml/rss/nyt/Technology.xml,nytimes,0,Science
+Science,http://rss.nytimes.com/services/xml/rss/nyt/Science.xml,nytimes,0,Science
+Health,http://rss.nytimes.com/services/xml/rss/nyt/Health.xml,nytimes,0,Science
+Editorials,http://topics.nytimes.com/top/opinion/editorialsandoped/editorials/index.html?rss=1,nytimes,0,Opinion
+Paul Krugman,http://www.nytimes.com/svc/collections/v1/publish/www.nytimes.com/column/paul-krugman/rss.xml,nytimes,0,Opinion
+News,http://www.newyorker.com/feed/news,newyorker,0,US
+Culture,http://www.newyorker.com/feed/culture,newyorker,0,Culture
+Humour,http://www.newyorker.com/feed/humor,newyorker,0,Humour
+Books & Fiction,http://www.newyorker.com/feed/books,newyorker,0,Culture
+Science & Technology,http://www.newyorker.com/feed/tech,newyorker,0,Science
+Business,http://www.newyorker.com/feed/business,newyorker,0,Economics
+Magazine Articles,http://www.newyorker.com/feed/articles,newyorker,0,Culture
+Business,https://www.wired.com/category/business/feed/,wired,0,Economics
+Design,https://www.wired.com/category/design/feed/,wired,0,Science
+Entertainment,https://www.wired.com/category/underwire/feed/,wired,0,Culture
+Tech,https://www.wired.com/category/gear/feed/,wired,0,Science
+Product Reviews,https://www.wired.com/category/reviews/feed/,wired,0,Science
+Science,https://www.wired.com/category/science/feed/,wired,0,Science
+Security,https://www.wired.com/category/security/feed/,wired,0,Science
+Transportation,https://www.wired.com/category/transportation/feed/,wired,0,Science
+New Zealand,http://www.radionz.co.nz/rss/national.xml,radionz,0,National
+Politics,http://www.radionz.co.nz/rss/political.xml,radionz,0,National
+Environment,http://www.radionz.co.nz/rss/environment.xml,radionz,0,National
+Business,http://www.radionz.co.nz/rss/business.xml,radionz,0,National
+Media & Technology,http://www.radionz.co.nz/rss/media-technology.xml,radionz,0,National
+World,http://www.radionz.co.nz/rss/world.xml,radionz,0,World
+Business & Finance,http://www.economist.com/sections/business-finance/rss.xml,economist,0,Economics
+Economics,http://www.economist.com/sections/economics/rss.xml,economist,0,Economics
+Science & Technology,http://www.economist.com/sections/science-technology/rss.xml,economist,0,Science
+Culture,http://www.economist.com/sections/culture/rss.xml,economist,0,Culture
+United States,http://www.economist.com/sections/united-states/rss.xml,economist,0,US
+Britain,http://www.economist.com/sections/britain/rss.xml,economist,0,World
+China,http://www.economist.com/sections/china/rss.xml,economist,0,World
+Americas,http://www.economist.com/sections/americas/rss.xml,economist,0,World
+Middle East and Africa,http://www.economist.com/sections/middle-east-africa/rss.xml,economist,0,World
+Europe,http://www.economist.com/sections/europe/rss.xml,economist,0,World
+Asia,http://www.economist.com/sections/asia/rss.xml,economist,0,World
+International,http://www.economist.com/sections/international/rss.xml,economist,0,World
+Obituary,http://www.economist.com/sections/obituary/rss.xml,economist,0,World
+Leaders,http://www.economist.com/sections/leaders/rss.xml,economist,0,World
+US,http://www.npr.org/rss/rss.php?id=1003,npr,0,US
+World,http://www.npr.org/rss/rss.php?id=1004,npr,0,World
+Business,http://www.npr.org/rss/rss.php?id=1006,npr,0,Economics
+Science,http://www.npr.org/rss/rss.php?id=1007,npr,0,Science
+Politics,http://www.npr.org/rss/rss.php?id=1012,npr,0,US
+Education,http://www.npr.org/rss/rss.php?id=1013,npr,0,Science
+Race,http://www.npr.org/rss/rss.php?id=1015,npr,0,Culture
+Religion,http://www.npr.org/rss/rss.php?id=1016,npr,0,Culture
+Economy,http://www.npr.org/rss/rss.php?id=1017,npr,0,Economics
+Technology,http://www.npr.org/rss/rss.php?id=1019,npr,0,Science
+Media,http://www.npr.org/rss/rss.php?id=1020,npr,0,Culture
+Research,http://www.npr.org/rss/rss.php?id=1024,npr,0,Science
+Environment,http://www.npr.org/rss/rss.php?id=1025,npr,0,Science
+Investigations,http://feeds.propublica.org/propublica/main,0,US

@@ -1,0 +1,86 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}{% endblock %} :: Posted</title>
+  <meta name="description" content="{% block description %}{% endblock %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Loading Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Loading custom style -->
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+  {% block css %}{% endblock %}
+  <script src="{% static 'js/js-cookie.js' %}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div id="loading"></div>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-burger-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/{% if user.is_authenticated %}news/{% endif %}">Posted</a>
+      </div>
+      {% if user.is_authenticated %}
+      <div class="collapse navbar-collapse" id="navbar-burger-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/{% if user.is_authenticated %}news/{% endif %}">Home</a>
+          </li>
+          <li>
+            <a href="/news/providers/">Providers</a>
+          </li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="{% url 'news:myarticles' %}">My Articles</a>
+                </li>
+                <li>
+                  <a href="{% url 'news:myfeeds' %}">My Feeds</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="{% url 'logout' %}">Logout</a>
+                </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      {% else %}
+      <div class="collapse navbar-collapse" id="navbar-burger-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/accounts/register/">Sign up</a>
+          </li>
+          <li>
+            <a href="/accounts/login/">Login</a>
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+  </nav>
+  <div class="container-fluid">
+    {% block content %}{% endblock %}
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="{% static 'js/posted.js' %}"></script>
+</body>
+</html>

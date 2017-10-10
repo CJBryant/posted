@@ -1,0 +1,20 @@
+{% extends "news_base.html" %}
+
+{% load static %}
+
+{% block title %}News{% endblock %}
+
+{% block description %}Latest news from your favourite providers.{% endblock %}
+
+{% block content %}
+<header>
+  <h1>Home</h1>
+</header>
+
+  {% include page_template %}
+  {% block js %}
+      {{ block.super }}
+      <script src="{% static 'js/el-pagination.js' %}"></script>
+      <script>$.endlessPaginate({paginateOnScroll: true, paginateOnScrollMargin: 2000});</script>
+  {% endblock %}
+{% endblock %}
