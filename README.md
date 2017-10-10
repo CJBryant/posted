@@ -3,6 +3,7 @@ Posted is a news aggregation app built using the Django web framework.
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
 Set working directory to app root
 ```
 $ cd /path/to/posted-app/
